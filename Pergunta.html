@@ -90,8 +90,11 @@
       btnNo.style.top = rndH + 'px';
     });
 
-    btnYes.addEventListener("click", () => {
-      alert("Porquê tanta resistência? :(!");
+    btnNo.addEventListener("click", () => {
+      let rndW = Math.random() * (width - btnNo.offsetWidth);
+      let rndH = Math.random() * (height - btnNo.offsetHeight);
+      btnNo.style.left = rndW + 'px';
+      btnNo.style.top = rndH + 'px';
     });
 
   </script>
